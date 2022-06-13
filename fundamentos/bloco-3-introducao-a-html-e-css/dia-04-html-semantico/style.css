@@ -1,0 +1,48 @@
+header {
+    text-align: center;
+    border: 3px solid red;
+}
+
+article {
+    
+}
+
+article h2 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 3px solid red;
+    background-color: white;
+}
+
+ul.nav-links li{
+    display: inline;
+    margin: 100px;
+}
+
+section.image img {
+    width: 300px;
+    border: 1px solid black;
+    display: block;
+    margin-left: 280px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 2px;
+    background-color: black;
+}
+
+aside {
+    float: right;
+    margin-right: 30px;
+}
+
+
+
+
+
