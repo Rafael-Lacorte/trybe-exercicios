@@ -1,5 +1,29 @@
-let str = 'test'
+let moradores = {
+    blocoUm: [
+      {
+        nome: 'Luiza',
+      
+      },
+      {
+        nome: 'William',
 
-for (a of str) {
-    console.log(a)
-}
+      },
+    ],
+    blocoDois: [
+      {
+        nome: 'Murilo',
+
+      },
+      {
+        nome: 'Zoey',
+      },
+    ],
+  };
+
+  console.log(
+    moradores.blocoUm[0].nome
+  )
+
+  for (blocos in moradores) {
+    console.log(moradores[blocos][0].nome)
+  }
