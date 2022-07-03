@@ -123,9 +123,6 @@ function addTask(str) {
   let myTasksElement = document.getElementsByClassName('my-tasks')
   let task = document.createElement('span') 
   task.innerText = str
-  console.log(
-    myTasksElement
-  )
   myTasksElement[0].appendChild(task)
 }
 
@@ -143,7 +140,46 @@ function addTag(color) {
 addTag('yellow')
 
 function selectTask () {
-  
+  let task = document.querySelector('.task')
+  let taskSelected = document.getElementsByClassName('task selected')
+  task.addEventListener('click', function(event) {
+    if(taskSelected.length == 0) {
+      event.target.className = 'task selected'
+      return
+    }
+    event.target.className = 'task'
+  })
 }
 
 selectTask()
+
+function setTaskColorAsDayColor() {
+  let dates = document.getElementsByClassName('day')
+  let taskSelected = document.getElementsByClassName('task selected')
+  for (i = 0; i < dates.length; i++) {
+    dates[i].addEventListener('click', function(event) {
+      if (taskSelected.length != 0 ) {
+          let color = taskSelected[0].style.backgroundColor
+          event.target.style.color = color
+          return
+      }
+      event.target.style.color = 'rgb(119,119,119)'
+    })
+  }
+}
+
+setTaskColorAsDayColor()
+
+function addAppointments() {
+  let addAppointmentButton = document.querySelector('#btn-add')
+  let textBox = document.querySelector('#task-input')
+  let listOfAppointments = document.querySelector('.task-list')
+  addAppointmentButton.addEventListener('click', function(event) {
+    console.log(textBox.value)
+    let appointment = document.createElement('il')
+    appointment.innerText = textBox.value
+    listOfAppointments.appendChild(appointment)
+  })
+}
+addAppointments()
+
