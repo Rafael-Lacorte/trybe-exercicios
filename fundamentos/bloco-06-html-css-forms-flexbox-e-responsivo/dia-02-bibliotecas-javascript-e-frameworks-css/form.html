@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balena-etcher-electron-1.7.9-linux-x64/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
+    <script src="balena-etcher-electron-1.7.9-linux-x64/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <title>Trybe Trip</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-4 text-muted">Formulário de inscrição Trybe Trips</h1>
+    </header>
+    <fieldset>
+        <div class="form-group">
+            <label for="name-input">Nome Completo: </label>
+            <input type="text" minlength="10" maxlength="40" id="name-input">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="email-input">Email: </label>
+            <input class="form-control" type="email" id="email-input class="form-control"" minlength="10" maxlength="50">
+        </div>
+        <br>
+        <div class="form-group">
+            <input class="form-control" type="radio" id="destination1"  name="destinations" value="Cidade">
+            <label for="Cidade">Cidade</label>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="radio" id="destination2"  name="destinations" value="Campo">
+            <label for="Campo">Campo</label>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="radio" id="destination3"  name="destinations" value="Praia">
+            <label for="Praia">Praia</label>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="radio" id="destination4"  name="destinations" value="Montanhas">
+            <label for="Montanhas">Montanhas</label>
+        </div>
+        <br>
+        <div class="form-group"><label for="why"why>Espaço para digitar a resposta</label></div>
+        <br>
+        <div class="form-group"><textarea name="why" id="why" cols="50" rows="10"></textarea></div>
+        <br>
+        <div class="form-group">
+            <label for="Data">Qual a melhor data para realizar sua viagem?</label>
+            <input class="form-control" type="date" id="date" name="date" value="Data">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input class="form-control" type="checkbox" name="promo" id="promo">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="agreement">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <input class="form-control" type="checkbox" name="agreement" id="agreement">
+        </div>
+        <br>
+    </fieldset>
+    <button type="submit" id="submit-btn" class="btn btn-success">Participar do concurso TrybeTrip</button>
+    <button type="button" id="clear-btn">Apagar informações</button>
+    <script src="script.js"></script>
+</body>
+</html>
