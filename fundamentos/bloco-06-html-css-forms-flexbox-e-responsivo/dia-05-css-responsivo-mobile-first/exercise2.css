@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+  
+    
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: lightgrey;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 15px;
+       
+    }   
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header ul {
+        display: flex;
+        list-style: none;
+        
+    }
+
+    header ul li {
+        margin: 5px;        
+    }
+    
+    header p {
+        font-size: 30px;
+        font-weight: 900;
+        
+    }
+    
+}
+    
+    
+    
+    
+@media screen and (max-width: 800px) {
+    body {
+        background-color: cyan;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black;
+        color: white;
+        
+    }
+    
+    header {
+        display: block;
+    }
+
+    section {
+        display: block;
+        align-items: center;
+    }
+    
+}
