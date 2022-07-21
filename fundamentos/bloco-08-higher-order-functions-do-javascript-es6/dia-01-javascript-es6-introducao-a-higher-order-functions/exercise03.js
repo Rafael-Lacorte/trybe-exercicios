@@ -10,7 +10,7 @@ const checkAnswers = (feedback, studentAswers) => {
         }
     
     }
-    console.log(grade)
+    return grade
 }
 
 const checkGrade = (feedback, studentAswers, callback) => {
