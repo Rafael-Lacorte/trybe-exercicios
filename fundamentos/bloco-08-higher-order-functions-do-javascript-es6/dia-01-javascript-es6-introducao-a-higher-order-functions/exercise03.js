@@ -8,9 +8,8 @@ const checkAnswers = (feedback, studentAswers) => {
         } else if (studentAswers[i] !== feedback[i]) {
             grade -= 0.5
         }
-    
     }
-    console.log(grade)
+    return grade
 }
 
 const checkGrade = (feedback, studentAswers, callback) => {
