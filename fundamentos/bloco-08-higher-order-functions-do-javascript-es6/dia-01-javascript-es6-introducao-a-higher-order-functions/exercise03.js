@@ -8,7 +8,6 @@ const checkAnswers = (feedback, studentAswers) => {
         } else if (studentAswers[i] !== feedback[i]) {
             grade -= 0.5
         }
-    
     }
     return grade
 }
