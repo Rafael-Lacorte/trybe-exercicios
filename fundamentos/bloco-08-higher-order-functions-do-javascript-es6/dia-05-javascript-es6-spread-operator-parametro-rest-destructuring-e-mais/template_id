@@ -1,0 +1,7 @@
+FLOW_CONTEXT=Production ./flow util:createProcessInstanceForCompany 8ea922cf-c442-2e49-cb98-467d656abdd7 2953ae12-0ff4-2038-352a-0ff47230a567
+FLOW_CONTEXT=Production ./flow util:createProcessInstanceForCompany 8ea922cf-c442-2e49-cb98-467d656abdd7 6d50c2b7-b6ab-a7f1-d800-9d3fd3519eb2
+FLOW_CONTEXT=Production ./flow util:createProcessInstanceForCompany 8ea922cf-c442-2e49-cb98-467d656abdd7 15ff6262-d9bf-040a-8d8e-90415f187b1f
+FLOW_CONTEXT=Production ./flow util:createProcessInstanceForCompany 8ea922cf-c442-2e49-cb98-467d656abdd7 ac8a0b9b-6085-64f5-a9e1-c62e751a39d9
+FLOW_CONTEXT=Production ./flow util:createProcessInstanceForCompany 8ea922cf-c442-2e49-cb98-467d656abdd7 632840f8-0730-d371-a671-b557428df481
+
+FLOW_CONTEXT=Production ./flow Company:enableFinanceiroForCompany f2fdb6c3-f23f-00be-d2a2-0e2364141792
