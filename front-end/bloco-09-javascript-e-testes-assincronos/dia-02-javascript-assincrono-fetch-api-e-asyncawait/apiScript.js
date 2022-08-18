@@ -3,7 +3,7 @@
 
 const API_URL = 'https://icanhazdadjoke.com/';
 
-document.getElementById('jokeContainer').style.color = 'red'
+document.getElementById('jokeContainer').innerText = 'ra'
 
 const fetchJoke = () => {
   const myObject = {
@@ -18,4 +18,4 @@ const fetchJoke = () => {
 };
 
 
-window.onload = () => fetchJoke();
+// window.onload = () => fetchJoke();
