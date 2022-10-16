@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Cars from './Cars';
+import Form from './Form';
 
 function App() {
   return (
-    <Cars />
+    <Form />
   );
 }
 
