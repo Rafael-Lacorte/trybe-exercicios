@@ -9,7 +9,7 @@ async function readAll() {
     });
 }
 
-// readAll()
+readAll()
 
 async function findbyId(id) {
     const data = await fs.readFile('./simpsons.json', 'utf-8');
