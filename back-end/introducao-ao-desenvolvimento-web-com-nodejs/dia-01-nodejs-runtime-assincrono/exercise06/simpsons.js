@@ -49,7 +49,7 @@ async function filterSimpsons() {
 
 async function addSimpson() {
     const fileContent = await fs
-        .readFile('./simpsons.json', 'utf-8');
+        .readFile('./', 'utf-8');
     const newArray = simpsons.filter((simpsons) => simpsons.id !== '10' && simpsons.id !== '6')
     const simpsons = JSON.parse(fileContent);
     simpsons.push({ id: '8', name: 'Nelson Muntz' })
