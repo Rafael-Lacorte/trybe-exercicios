@@ -10,9 +10,8 @@ class Pedido {
         this.itens = itens;
         this.formaDePagamento;
         this.desconto;
-
-  
     }
+
     getTotal() {
         const total = this.itens.reduce((a, item) {
             return a+ item.price;
