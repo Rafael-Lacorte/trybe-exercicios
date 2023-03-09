@@ -1,0 +1,27 @@
+db.movies.find({ category: { $all: ["action", "adventure" ]  } } ).pretty()
+
+db.movies.find({ category: { $all: ["action", "adventure" ]  }, imdbRating: { $gt: 7 } } )
+
+db.movies.find({ ratings: { $elemMatch: { $gt: 103 } } }, { _id: 0, title: 1, ratings: 1 } ).pretty();
+
+db.movies.find( { ratings: { $elemMatch: { $gt: 100, $lt: 105 } }}, { _id: 0, title: 1, ratings: 1}).pretty();
+
+db.movies.find( { ratings: { $elemMatch: { $gt: 64, $lt: 105, $mod:[9,0] } }}, { _id: 0, title: 1, ratings: 1}).pretty();
+
+db.movies.find( { ratings: { $elemMatch: { $gt: 103 } }, category: { $all: ["adventure"] } }, { _id: 0, title: 1, ratings: 1 }).pretty();
+
+db.movies.find( { category : { $size: 2 } }, { _id: 0, title: 1 }).pretty();
+
+db.movies.find( { ratings : { $size: 4 } }, { _id: 0, title: 1 }).pretty();
+
+db.movies.find( { category : { $size: 2 }, budget: { $mod:[5,0] } }).pretty();
+
+db.movies.find({ $or: [ { ratings: { $elemMatch: { $gt: 199 } } }, { category: { $all: ["sci-fi"] } } ] }, { _id: 0, title: 1, ratings: 1, category: 1 }).pretty();
+
+db.movies.find( { $and: [{ ratings : { $size: 4 } }, { category: { $in: ["family", "adventure"] } }, { imdbRating:  { $not :{ $gt: 6.9 }} }]}, { _id: 0, title: 1, ratings: 1, category: 1 }).pretty();
+
+db.movies.find( { description: { $regex: /^The/ } } )
+
+db.movies.find( { description: { $regex: /humanity.$/ } } )
+
+db.movies.find( { $expr: { $gt: ["$grossWorldwide", "$budget"] } } )
