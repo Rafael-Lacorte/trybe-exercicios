@@ -11,5 +11,3 @@ def fizz_buzz(number):
       data.append(n+1)
 
   return data
-
-fizz_buzz(2)
