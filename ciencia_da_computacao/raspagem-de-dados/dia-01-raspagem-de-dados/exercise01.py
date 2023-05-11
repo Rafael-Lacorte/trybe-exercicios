@@ -1,6 +1,7 @@
-from time import sleep
-from selenium import webdriver
+import requests
 
-firefox = webdriver.Firefox()
+url = 'https://httpbin.org/encoding/utf8'
 
-response = firefox.get('https://quotes.toscrape.com/')
+response = requests.get(url)
+
+print(response.text)
